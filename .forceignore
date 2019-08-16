@@ -1,0 +1,57 @@
+# List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
+# More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
+#
+
+package.xml
+
+# Ignore Extra metadata on FieloPLT package
+PLTLabs/plt/main/default/objects/ChallengeReward__c/fields/CustomMilesExpiration__c.field-meta.xml
+PLTLabs/plt/main/default/objects/ChallengeReward__c/fields/MilesConversionMode__c.field-meta.xml
+PLTLabs/plt/main/default/objects/ChallengeReward__c/fields/MilesConversionValue__c.field-meta.xml
+PLTLabs/plt/main/default/objects/ChallengeReward__c/fields/MilesExpirationDate__c.field-meta.xml
+PLTLabs/plt/main/default/objects/ChallengeReward__c/fields/MilesExpirationMode__c.field-meta.xml
+PLTLabs/plt/main/default/objects/ChallengeReward__c/fields/MilesExpiration__c.field-meta.xml
+PLTLabs/plt/main/default/objects/ChallengeReward__c/fields/MilesFieldName__c.field-meta.xml
+PLTLabs/plt/main/default/objects/ChallengeReward__c/fields/MilesMonthsUntilExpiration__c.field-meta.xml
+PLTLabs/plt/main/default/objects/ChallengeReward__c/fields/MilesReflection__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Member__c/fields/Miles__c.field-meta.xml
+PLTLabs/plt/main/default/objects/RedemptionItem__c/fields/Miles__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Redemption__c/fields/Miles__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Reward__c/fields/Miles__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Rule__c/fields/CustomMilesExpiration__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Rule__c/fields/MilesConversionMode__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Rule__c/fields/MilesConversionValue__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Rule__c/fields/MilesExpirationDate__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Rule__c/fields/MilesExpirationMode__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Rule__c/fields/MilesExpiration__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Rule__c/fields/MilesFieldName__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Rule__c/fields/MilesMonthsUntilExpiration__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Rule__c/fields/MilesReflection__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Transaction__c/fields/MilesTransactionExpirationDate__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Transaction__c/fields/MilesExpirationDate__c.field-meta.xml
+PLTLabs/plt/main/default/objects/Transaction__c/fields/Miles__c.field-meta.xml
+PLTLabs/plt/main/default/objects/ChallengeMember__c/fields/MilesPortion__c.field-meta.xml
+PLTLabs/plt/main/default/classes/DefaultDeliveryClass.cls
+PLTLabs/plt/main/default/classes/DefaultDeliveryClass.cls-meta.xml
+
+# Unpackage Folder
+PLTLabs/plt/unpackaged
+
+# PLT profiles
+PLTLabs/plt/main/default/profiles/Custom%3A Marketing Profile.profile-meta.xml
+PLTLabs/plt/main/default/profiles/Custom%3A Sales Profile.profile-meta.xml
+PLTLabs/plt/main/default/profiles/Custom%3A Support Profile.profile-meta.xml
+
+# Communities
+PLTLabs/plt/unpackaged/default/profiles/Fielo Community Profile.profile-meta.xml
+
+# Files that fails the push to org
+AppSwitcher.appMenu
+PT1_profilePasswordPolicy*
+PT1_profileSessionSetting*
+PLTLabs/plt/main/default/settings/Security.settings-meta.xml
+PLTLabs/plt/main/default/settings/OrgPreference.settings-meta.xml
+PLTLabs/plt/main/default/translations/en_US.translation-meta.xml
+**/jsconfig.json
+
+**/.eslintrc.json
